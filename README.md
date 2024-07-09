@@ -1,0 +1,2 @@
+# Sort-Vista-Project 
+The Sorting Visualizer project is a web application that demonstrates various sorting algorithms visually. It allows users to interactively visualize how algorithms like Bubble Sort, insertion sort , selection sort operate on different sets of data. This project is built using HTML, CSS, and JavaScript, providing an educational tool for understanding sorting techniques through animation and real-time updates.
