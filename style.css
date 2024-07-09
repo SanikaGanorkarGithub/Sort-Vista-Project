@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-heading {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #1ad0e8; /* Darker purple color */
+  margin-top: 20px;
+  font-size: 36px; /* Adjust font size as needed */
+}
+
+body {
+  background: #868097; /* Soft lavender background */
+  font-family: Arial, sans-serif; /* Updated font */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 15px;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  background: #d8c8ea; /* Soft purple background */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.stage {
+  display: flex;
+  position: relative;
+  height: 300px;
+  background: #f3c7e6; /* Light pink background */
+  padding: 10px;
+  border-radius: 8px;
+  align-items: flex-end;
+}
+
+.bar {
+  position: absolute;
+  height: 100px;
+  width: 20px; /* Adjusted width */
+  background: #6b5b95; /* Darker purple color for bars */
+  transition: all 300ms ease-out;
+  border-radius: 6px;
+}
+
+.bar.activate {
+  background: #2bc692; /* Bright pink color for active bar */
+  animation: upAndDownScale 1.5s ease-in-out;
+}
+
+@keyframes upAndDownScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.generate-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px; /* Slightly smaller font size */
+  border-radius: 8px;
+}
+
+.generate-new input {
+  padding: 6px;
+  margin-top: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+}
+
+button {
+  background: #ea4c89; /* Pink color */
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #f082ac; /* Lighter pink on hover */
+}
+
+.select-algorithm {
+  display: flex;
+  flex-direction: column;
+  background: #f3c7e6; /* Light pink background */
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.select-algorithm select {
+  background: #9b59b6; /* Purple background */
+  color: #fff;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.select-algorithm select option {
+  padding: 10px;
+}
